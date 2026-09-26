@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Application — Rock Media</title>
+  <meta name="description" content="Apply to work with Rock Media. Tell us about you, your platforms and your goals — 10% off your first month." />
+  <meta name="theme-color" content="#eae0d2" />
+  <meta property="og:title" content="Creator Application — Rock Media" />
+  <meta property="og:description" content="Apply to work with Rock Media. Tell us about you, your platforms and your goals — 10% off your first month." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="apply">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="offer-bar">10% off your first month on every plan.<a href="pricing.html">View pricing</a></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html" aria-label="Rock Media — home">Rock <span>Media</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span><span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="about.html" data-nav="about">About</a>
+        <a href="services.html" data-nav="services">Services</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="creators.html" data-nav="creators">For Creators</a>
+        <a href="brands.html" data-nav="brands">For Brands</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="apply.html" data-nav="apply">Apply as a creator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Creator application</p>
+        <h1>Apply to work <em>with us.</em></h1>
+        <p class="lede">Tell us about you, your platforms and where you want to go. It takes a few minutes, and there’s no commitment.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <aside class="reveal">
+          <div class="aside-sticky">
+            <div class="aside-block">
+              <p class="eyebrow">What happens next</p>
+              <ol class="steps" style="border-top-color:var(--line)">
+                <li style="grid-template-columns:44px 1fr;padding:20px 0"><h3 style="font-size:17px">We review your profile</h3></li>
+                <li style="grid-template-columns:44px 1fr;padding:20px 0"><h3 style="font-size:17px">We reach out to talk</h3></li>
+                <li style="grid-template-columns:44px 1fr;padding:20px 0"><h3 style="font-size:17px">You choose a plan</h3></li>
+              </ol>
+            </div>
+            <div class="aside-block">
+              <span class="offer-tag">Offer</span>
+              <p class="statement" style="font-size:30px">10% off your first month.</p>
+              <p class="muted small" style="margin-top:8px">Applies to every plan. <a href="pricing.html" style="border-bottom:1px solid var(--line);color:var(--ink)">See pricing</a></p>
+            </div>
+          </div>
+        </aside>
+
+        <div class="form-panel reveal">
+          <form class="form" data-form="apply" data-title="Creator application" novalidate>
+            <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label></div>
+            <fieldset class="fieldset">
+              <legend>About you</legend>
+              <div class="form-grid">
+                <div class="field"><label for="a-name">Full name</label><input class="input" id="a-name" name="name" required autocomplete="name" /></div>
+                <div class="field"><label for="a-email">Email</label><input class="input" id="a-email" name="email" type="email" required autocomplete="email" /></div>
+                <div class="field"><label for="a-phone">Phone / WhatsApp <span class="opt">(optional)</span></label><input class="input" id="a-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91" /></div>
+                <div class="field"><label for="a-city">City</label><input class="input" id="a-city" name="city" required autocomplete="address-level2" /></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Your platforms</legend>
+              <div class="form-grid">
+                <div class="field"><label for="a-platform">Main platform</label>
+                  <select class="input" id="a-platform" name="platform" required data-msg="Please choose your main platform.">
+                    <option value="">Select…</option><option>Instagram</option><option>YouTube</option><option>Other</option>
+                  </select>
+                </div>
+                <div class="field"><label for="a-handle">Handle</label><input class="input" id="a-handle" name="handle" required placeholder="@yourhandle" /></div>
+                <div class="field"><label for="a-followers">Followers on main platform</label>
+                  <select class="input" id="a-followers" name="followers" required data-msg="Please choose a range.">
+                    <option value="">Select…</option><option>Under 1K</option><option>1K – 10K</option><option>10K – 50K</option><option>50K – 100K</option><option>100K – 500K</option><option>500K+</option>
+                  </select>
+                </div>
+                <div class="field"><label for="a-niche">Niche / content type</label><input class="input" id="a-niche" name="niche" required placeholder="e.g. fashion, fitness, comedy, tech" /></div>
+                <div class="field full"><label for="a-other">Other platforms <span class="opt">(optional)</span></label><input class="input" id="a-other" name="other_platforms" placeholder="Links or handles on other platforms" /></div>
+                <div class="field full">
+                  <span class="label" id="a-freq-label">How often do you post right now?</span>
+                  <div class="chips" role="radiogroup" aria-labelledby="a-freq-label">
+                    <label class="chip"><input type="radio" name="frequency" value="Rarely" required data-msg="Please choose one." /><span>Rarely</span></label>
+                    <label class="chip"><input type="radio" name="frequency" value="1–2 times a week" /><span>1–2× a week</span></label>
+                    <label class="chip"><input type="radio" name="frequency" value="3–5 times a week" /><span>3–5× a week</span></label>
+                    <label class="chip"><input type="radio" name="frequency" value="Daily" /><span>Daily</span></label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Your goals</legend>
+              <div class="field">
+                <span class="label" id="a-goals-label">What do you want help with? <span class="opt">(choose any)</span></span>
+                <div class="chips" role="group" aria-labelledby="a-goals-label">
+                  <label class="chip"><input type="checkbox" name="goals" value="Posting consistently" /><span>Posting consistently</span></label>
+                  <label class="chip"><input type="checkbox" name="goals" value="Growing my audience" /><span>Growing my audience</span></label>
+                  <label class="chip"><input type="checkbox" name="goals" value="Content strategy" /><span>Content strategy</span></label>
+                  <label class="chip"><input type="checkbox" name="goals" value="Managing comments & DMs" /><span>Comments &amp; DMs</span></label>
+                  <label class="chip"><input type="checkbox" name="goals" value="Brand deals" /><span>Brand deals</span></label>
+                  <label class="chip"><input type="checkbox" name="goals" value="Media kit" /><span>Media kit</span></label>
+                </div>
+              </div>
+              <div class="field"><label for="a-plan">Plan you’re interested in</label>
+                <select class="input" id="a-plan" name="plan" required data-msg="Please choose a plan, or “Not sure yet”.">
+                  <option value="">Select…</option><option value="undecided">Not sure yet — help me choose</option><option value="starter">Starter — ₹4,999/month</option><option value="growth">Growth — ₹7,999/month</option><option value="pro">Pro — ₹12,999/month</option><option value="elite">Elite — ₹19,999/month</option>
+                </select>
+                <p class="help">10% off your first month on any plan.</p>
+              </div>
+              <div class="field"><label for="a-msg">Tell us about your goals</label><textarea class="input" id="a-msg" name="message" required minlength="20" placeholder="Where are you now, and where do you want to be in 6 months?"></textarea></div>
+              <div class="field"><label for="a-source">How did you hear about us? <span class="opt">(optional)</span></label><input class="input" id="a-source" name="source" /></div>
+              <div class="field">
+                <label class="check"><input type="checkbox" name="consent" value="yes" required data-msg="Please confirm to continue." /><span>I confirm the details above are accurate and I’m happy for Rock Media to contact me about my application.</span></label>
+              </div>
+            </fieldset>
+
+            <p class="form-status" role="alert"></p>
+            <button class="btn btn-primary" type="submit">Submit application</button>
+          </form>
+          <div class="form-success" hidden>
+            <h3 tabindex="-1" data-success-title>Almost there.</h3>
+            <p class="muted" data-success-body></p>
+            <div data-handoff>
+              <ol class="steps-mini">
+                <li>Tap “Send via Instagram” — your message is copied automatically.</li>
+                <li>Paste it into the DM with @rockmedia.co and hit send.</li>
+              </ol>
+            </div>
+            <pre class="summary"></pre>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://ig.me/m/rockmedia.co" target="_blank" rel="noopener" data-send-ig>Send via Instagram</a>
+              <button class="btn btn-ghost" type="button" data-send-discord>Copy for Discord</button>
+            </div>
+            <button class="link-arrow" type="button" data-reset style="background:none;border-left:0;border-right:0;border-top:0;cursor:pointer;justify-self:start">Start a new message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-tagline">Built to <em>Be Seen.</em></p>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="creators.html">For Creators</a></li>
+            <li><a href="brands.html">For Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html">Creator Application</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/rockmedia.co/" target="_blank" rel="noopener">Instagram — @rockmedia.co</a></li>
+            <li><button type="button" data-copy="rockmedia.co">Discord — rockmedia.co</button></li>
+            <li><a href="contact.html">Send an enquiry</a></li>
+            <li><span>Based in India</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-ig">
+        <a href="https://www.instagram.com/rockmedia.co/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>Follow @rockmedia.co on Instagram</a>
+        <a class="btn btn-light btn-sm" href="https://ig.me/m/rockmedia.co" target="_blank" rel="noopener">DM for collaborations &amp; management</a>
+      </div>
+      <div class="footer-bottom">
+        <span class="wordmark">Rock <span>Media</span></span>
+        <span>© <span data-year>2026</span> Rock Media · Creator management &amp; social media · India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

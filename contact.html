@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Rock Media</title>
+  <meta name="description" content="Get in touch with Rock Media on Instagram (@rockmedia.co), Discord (rockmedia.co) or through our enquiry form. Based in India." />
+  <meta name="theme-color" content="#eae0d2" />
+  <meta property="og:title" content="Contact — Rock Media" />
+  <meta property="og:description" content="Get in touch with Rock Media on Instagram (@rockmedia.co), Discord (rockmedia.co) or through our enquiry form. Based in India." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="offer-bar">10% off your first month on every plan.<a href="pricing.html">View pricing</a></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html" aria-label="Rock Media — home">Rock <span>Media</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span><span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="about.html" data-nav="about">About</a>
+        <a href="services.html" data-nav="services">Services</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="creators.html" data-nav="creators">For Creators</a>
+        <a href="brands.html" data-nav="brands">For Brands</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="apply.html" data-nav="apply">Apply as a creator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s <em>talk.</em></h1>
+        <p class="lede">DM for collaborations &amp; management — or send us a message below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <div class="aside-sticky">
+            <p class="eyebrow">Reach us directly</p>
+            <div class="channels">
+              <a class="channel" href="https://www.instagram.com/rockmedia.co/" target="_blank" rel="noopener">
+                <span class="label">Instagram</span><span class="value">@rockmedia.co</span><span class="hint">Open ↗</span>
+              </a>
+              <a class="channel" href="https://ig.me/m/rockmedia.co" target="_blank" rel="noopener">
+                <span class="label">Direct message</span><span class="value">DM on Instagram</span><span class="hint">Message ↗</span>
+              </a>
+              <button class="channel" type="button" data-copy="rockmedia.co">
+                <span class="label">Discord</span><span class="value">rockmedia.co</span><span class="hint">Copy</span>
+              </button>
+              <div class="channel">
+                <span class="label">Based in</span><span class="value">India</span><span class="hint">Working online</span>
+              </div>
+            </div>
+            <p class="muted small" style="margin-top:28px">Are you a creator looking for management? The <a href="apply.html" style="border-bottom:1px solid var(--line);color:var(--ink)">creator application</a> is the quickest way to start.</p>
+          </div>
+        </div>
+
+        <div class="form-panel reveal">
+          <form class="form" data-form="contact" data-title="Contact enquiry" novalidate>
+            <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label></div>
+            <div class="field">
+              <span class="label" id="c-enq-label">I’m getting in touch as</span>
+              <div class="chips" role="radiogroup" aria-labelledby="c-enq-label">
+                <label class="chip"><input type="radio" name="enquiry" value="creator" data-label="A creator" required data-msg="Please choose one." /><span>A creator</span></label>
+                <label class="chip"><input type="radio" name="enquiry" value="brand" data-label="A brand" /><span>A brand</span></label>
+                <label class="chip"><input type="radio" name="enquiry" value="pricing" data-label="Pricing question" /><span>Pricing question</span></label>
+                <label class="chip"><input type="radio" name="enquiry" value="other" data-label="Something else" /><span>Something else</span></label>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Name</label><input class="input" id="c-name" name="name" required autocomplete="name" /></div>
+              <div class="field"><label for="c-email">Email</label><input class="input" id="c-email" name="email" type="email" required autocomplete="email" /></div>
+              <div class="field"><label for="c-handle">Instagram handle <span class="opt">(optional)</span></label><input class="input" id="c-handle" name="handle" placeholder="@yourhandle" /></div>
+              <div class="field"><label for="c-plan">Plan of interest <span class="opt">(optional)</span></label>
+                <select class="input" id="c-plan" name="plan"><option value="">—</option><option value="undecided">Not sure yet — help me choose</option><option value="starter">Starter — ₹4,999/month</option><option value="growth">Growth — ₹7,999/month</option><option value="pro">Pro — ₹12,999/month</option><option value="elite">Elite — ₹19,999/month</option></select>
+              </div>
+              <div class="field full"><label for="c-msg">Message</label><textarea class="input" id="c-msg" name="message" required minlength="10" placeholder="How can we help?"></textarea></div>
+            </div>
+            <p class="form-status" role="alert"></p>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+          <div class="form-success" hidden>
+            <h3 tabindex="-1" data-success-title>Almost there.</h3>
+            <p class="muted" data-success-body></p>
+            <div data-handoff>
+              <ol class="steps-mini">
+                <li>Tap “Send via Instagram” — your message is copied automatically.</li>
+                <li>Paste it into the DM with @rockmedia.co and hit send.</li>
+              </ol>
+            </div>
+            <pre class="summary"></pre>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://ig.me/m/rockmedia.co" target="_blank" rel="noopener" data-send-ig>Send via Instagram</a>
+              <button class="btn btn-ghost" type="button" data-send-discord>Copy for Discord</button>
+            </div>
+            <button class="link-arrow" type="button" data-reset style="background:none;border-left:0;border-right:0;border-top:0;cursor:pointer;justify-self:start">Start a new message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-tagline">Built to <em>Be Seen.</em></p>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="creators.html">For Creators</a></li>
+            <li><a href="brands.html">For Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html">Creator Application</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/rockmedia.co/" target="_blank" rel="noopener">Instagram — @rockmedia.co</a></li>
+            <li><button type="button" data-copy="rockmedia.co">Discord — rockmedia.co</button></li>
+            <li><a href="contact.html">Send an enquiry</a></li>
+            <li><span>Based in India</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-ig">
+        <a href="https://www.instagram.com/rockmedia.co/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>Follow @rockmedia.co on Instagram</a>
+        <a class="btn btn-light btn-sm" href="https://ig.me/m/rockmedia.co" target="_blank" rel="noopener">DM for collaborations &amp; management</a>
+      </div>
+      <div class="footer-bottom">
+        <span class="wordmark">Rock <span>Media</span></span>
+        <span>© <span data-year>2026</span> Rock Media · Creator management &amp; social media · India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
